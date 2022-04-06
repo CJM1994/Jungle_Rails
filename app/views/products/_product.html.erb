@@ -18,6 +18,6 @@
   </footer>
 
   <aside class="price">
-    <%= number_to_currency(product.price) %>
+    <%= humanized_money_with_symbol(product.price) %>
   </aside>
 </article>
