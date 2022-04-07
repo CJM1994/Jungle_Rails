@@ -7,10 +7,10 @@
 
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        Unique Products in Database:<span class="badge badge-primary"><%= @products.count %></span>
+        <%= link_to "Unique Products in Database:", admin_products_path %><span class="badge badge-primary"><%= @products.count %></span>
       </li>
       <li class="list-group-item">
-        Unique Product Categories in Database:<span class="badge badge-primary"><%= @categories.count %></span>
+        <%= link_to "Unique Product Categories in Database:" %><span class="badge badge-primary"><%= @categories.count %></span>
       </li>
     </ul>
   </div>
