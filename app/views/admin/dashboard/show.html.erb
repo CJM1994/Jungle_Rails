@@ -1,16 +1,17 @@
 <section class="admin-dashboard-show">
+  <div class="container">
+    <h1>
+      Admin Dashboard
+      <small class="text-muted">Check your store statistics here</small>
+    </h1>
 
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
-
-<%# Counters%>
-<div>
-<h1>Sample Header Text</h1>
-</div>
-
-
-
-<%= @products.count %>
-<%= @categories.count %>
-
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Unique Products in Database:<span class="badge badge-primary"><%= @products.count %></span>
+      </li>
+      <li class="list-group-item">
+        Unique Product Categories in Database:<span class="badge badge-primary"><%= @categories.count %></span>
+      </li>
+    </ul>
+  </div>
 </section>
