@@ -1,2 +1,17 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-dashboard-show">
+  <div class="container">
+    <h1>
+      Admin Dashboard
+      <small class="text-muted">Check your store statistics here</small>
+    </h1>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <%= link_to "Unique Products in Database:", admin_products_path %><span class="badge badge-primary"><%= @products.count %></span>
+      </li>
+      <li class="list-group-item">
+        <%= link_to "Unique Product Categories in Database:" %><span class="badge badge-primary"><%= @categories.count %></span>
+      </li>
+    </ul>
+  </div>
+</section>
