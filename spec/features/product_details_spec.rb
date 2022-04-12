@@ -23,7 +23,7 @@ RSpec.feature 'ProductDetails', type: :feature, js: true do
     # DEBUG / VERIFY
     expect(page).to have_css 'article.product', count: 10
     find('a.btn-default', match: :first).click
-    sleep 5
-    save_screenshot
+    sleep 3
+    expect(page).to have_css 'section.products-show', count: 1
   end
 end
