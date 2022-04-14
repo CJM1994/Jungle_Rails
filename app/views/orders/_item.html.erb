@@ -1,5 +1,6 @@
 <tr>
-  <td><%= item.product.name %></td>
+  <td><img src="<%= item.product.image %>" width="150px"></td>
+  <td><%= item.product.name %><br /><br /><%= item.product.description %></td>
   <td><%= item.quantity %></td>
   <td><%= humanized_money_with_symbol(item.item_price) %></td>
   <td><%= humanized_money_with_symbol(item.total_price) %></td>
